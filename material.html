@@ -3,8 +3,63 @@
 <head>
 <meta charset="UTF-8">
 <title>素材ページ</title>
+
+  <style>
+body {
+  background-color: #111;
+  color: red;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 40px 10px;
+}
+
+.box {
+  border: 3px solid red;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  background: black;
+  border-radius: 10px;
+}
+
+.item {
+  margin: 25px 0;
+}
+
+img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* 点滅アニメーション */
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+a {
+  display: inline-block;
+  padding: 15px 30px;
+  background: red;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  animation: blink 1s infinite;
+}
+
+a:hover {
+  background: darkred;
+}
+</style>
 </head>
+
 <body>
+  
 <h1>素材ページ</h1>
 
 <div class="item">
