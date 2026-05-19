@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ダウンロード一覧</title>
 
+<style>
+body {
+  background-color: #111;
+  color: red;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 40px 10px;
+}
+
+.box {
+  border: 3px solid red;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  background: black;
+  border-radius: 10px;
+}
+
+.item {
+  margin: 25px 0;
+}
+
+img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* 点滅アニメーション */
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+a {
+  display: inline-block;
+  padding: 15px 30px;
+  background: red;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  animation: blink 1s infinite;
+}
+
+a:hover {
+  background: darkred;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+  <h1> ダウンロード一覧</h1>
+
+  <div class="item">
+    <img src="thumb1.jpg">
+    <a href="video1.mp4" download>動画①をダウンロード</a>
+  </div>
+
+  <div class="item">
+    <img src="thumb2.jpg">
+    <a href="video2.mp4" download>動画②をダウンロード</a>
+  </div>
+
+  <div class="item">
+    <img src="thumb3.jpg">
+    <a href="video3.mp4" download>動画③をダウンロード</a>
+  </div>
+
+  <div class="item">
+    <img src="image1.jpg">
+    <a href="image1.jpg" download>画像①をダウンロード</a>
+  </div>
+
+  <div class="item">
+    <img src="image2.jpg">
+    <a href="image2.jpg" download>画像②をダウンロード</a>
+  </div>
+
+</div>
+
+</body>
+</html>
